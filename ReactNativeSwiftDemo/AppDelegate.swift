@@ -12,10 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var rootView: RCTRootView
+    let jsCodeLocation = NSURL(string: "http://localhost:8081/index.ios.bundle?platform=ios&dev=true")
+    
+    override init() {
+        
+        // initialize the rootView to fetch JS from the dev server
+        rootView = RCTRootView.init(bundleURL: jsCodeLocation!, moduleName: "ReactNativeSwiftDemo", initialProperties: nil, launchOptions: nil)
+        super.init()
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Initialize a Controller to use view as React View
+        let rootViewController = ViewController()
+        rootViewController.view = rootView
+        
+        // Set window to use rootViewController
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = rootViewController
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 
