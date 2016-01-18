@@ -14,6 +14,7 @@
 		0BFFBCFD1C4CC9710057587C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFFBCFB1C4CC9710057587C /* LaunchScreen.storyboard */; };
 		0BFFBD081C4CC9720057587C /* ReactNativeSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFBD071C4CC9720057587C /* ReactNativeSwiftDemoTests.swift */; };
 		0BFFBD131C4CC9720057587C /* ReactNativeSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFBD121C4CC9720057587C /* ReactNativeSwiftDemoUITests.swift */; };
+		0BFFBD261C4CCBBF0057587C /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFFBD251C4CCBAF0057587C /* libReact.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,13 @@
 			remoteGlobalIDString = 0BFFBCEE1C4CC9710057587C;
 			remoteInfo = ReactNativeSwiftDemo;
 		};
+		0BFFBD241C4CCBAF0057587C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BFFBD201C4CCBAF0057587C /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +55,7 @@
 		0BFFBD0E1C4CC9720057587C /* ReactNativeSwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeSwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFFBD121C4CC9720057587C /* ReactNativeSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		0BFFBD141C4CC9720057587C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BFFBD201C4CCBAF0057587C /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFFBD261C4CCBBF0057587C /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +87,7 @@
 		0BFFBCE61C4CC9710057587C = {
 			isa = PBXGroup;
 			children = (
+				0BFFBD201C4CCBAF0057587C /* React.xcodeproj */,
 				0BFFBCF11C4CC9710057587C /* ReactNativeSwiftDemo */,
 				0BFFBD061C4CC9720057587C /* ReactNativeSwiftDemoTests */,
 				0BFFBD111C4CC9720057587C /* ReactNativeSwiftDemoUITests */,
@@ -123,6 +134,14 @@
 				0BFFBD141C4CC9720057587C /* Info.plist */,
 			);
 			path = ReactNativeSwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		0BFFBD211C4CCBAF0057587C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BFFBD251C4CCBAF0057587C /* libReact.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +234,12 @@
 			mainGroup = 0BFFBCE61C4CC9710057587C;
 			productRefGroup = 0BFFBCF01C4CC9710057587C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0BFFBD211C4CCBAF0057587C /* Products */;
+					ProjectRef = 0BFFBD201C4CCBAF0057587C /* React.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0BFFBCEE1C4CC9710057587C /* ReactNativeSwiftDemo */,
@@ -223,6 +248,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0BFFBD251C4CCBAF0057587C /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 0BFFBD241C4CCBAF0057587C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0BFFBCED1C4CC9710057587C /* Resources */ = {
