@@ -704,7 +704,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = "node_modules/react-native/**";
+				HEADER_SEARCH_PATHS = "node_modules/react-native/React/**";
 				INFOPLIST_FILE = ReactNativeSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
@@ -718,7 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = "node_modules/react-native/**";
+				HEADER_SEARCH_PATHS = "node_modules/react-native/React/**";
 				INFOPLIST_FILE = ReactNativeSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
