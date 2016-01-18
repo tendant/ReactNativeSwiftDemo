@@ -137,6 +137,7 @@
 		0BFFBD5B1C4CD0050057587C /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		0BFFBD621C4CD01D0057587C /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		0BFFBD691C4CD0300057587C /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
+		0BFFBD701C4CD4D00057587C /* ReactNativeSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +214,7 @@
 				0BFFBCF91C4CC9710057587C /* Assets.xcassets */,
 				0BFFBCFB1C4CC9710057587C /* LaunchScreen.storyboard */,
 				0BFFBCFE1C4CC9710057587C /* Info.plist */,
+				0BFFBD701C4CD4D00057587C /* ReactNativeSwiftDemo-Bridging-Header.h */,
 			);
 			path = ReactNativeSwiftDemo;
 			sourceTree = "<group>";
